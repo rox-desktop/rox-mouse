@@ -1,0 +1,56 @@
+#!/usr/bin/env python2.4
+import findrox; findrox.version(1, 9, 6)
+
+import os
+import rox
+from rox.settings import Settings, Setting
+from rox import OptionsBox, g
+import mousetester
+import theme
+
+__builtins__._ = rox.i18n.translation(os.path.join(rox.app_dir, 'Messages'))
+
+
+def restart_supported_wm(rox_settings):
+    supported_wms = [ 'OroboROX' ]
+    wm_setting = rox_settings.GetSetting('ROX/WindowManager')
+    if wm_setting != None:
+        wm = os.path.basename(wm_setting[1])
+        if wm == "AppRun":
+            wm = os.path.basename(os.path.dirname(wm_setting[1]))
+        if wm in supported_wms:
+            import signal 
+            rootwin = g.gdk.get_default_root_window()
+            wmpid=long(rootwin.property_get("_NET_WM_PID")[2][0])
+            if wmpid > 1: 
+                os.kill(wmpid, signal.SIGHUP)
+
+settings = Settings()
+
+class MouseSetting(Setting):
+	def __init__(self, name, default):
+		Setting.__init__(self, name, default, settings)
+
+class ThemeSetting(Setting):
+	def __init__(self, name, default):
+		Setting.__init__(self, name, default, settings, True)
+	def post_notify_hook(self):
+		if self.value == _("Core Theme"):
+			self.value = "core_theme"
+		elif self.value == _("No Theme"):
+			self.value = ''  
+		restart_supported_wm(self.settings.bus)
+
+
+MouseSetting('Net/DoubleClickTime', 250)
+MouseSetting('Net/DndDragThreshold', 8)
+MouseSetting('ROX/AccelThreshold', 10)
+MouseSetting('ROX/AccelFactor', 20)
+MouseSetting('ROX/LeftHanded', 0)
+MouseSetting('ROX/CursorSize', 18)
+ThemeSetting('ROX/CursorTheme', '')
+
+box = OptionsBox.OptionsBox(settings, os.path.join(rox.app_dir, 'Options.xml'))
+box.open()
+box.set_title(_("Mouse options"))
+rox.mainloop()

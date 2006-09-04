@@ -1,0 +1,166 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Mouse ROX-Configlet 0.8.1\n"
+"POT-Creation-Date: Fri Sep  3 02:32:13 2004\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bitGenerated-By: pygettext.py 1.4\n"
+
+#: AppRun:23
+msgid "Mouse options"
+msgstr "Mauseinstellungen"
+
+#: mousetester.py:8
+msgid "Single click!"
+msgstr "Einzelklick!"
+
+#: mousetester.py:10
+msgid "Double click!!"
+msgstr "Doppelklick!!"
+
+#: mousetester.py:12
+msgid "Triple click!!!"
+msgstr "Dreifachklick!!!"
+
+#: mousetester.py:19
+msgid "Double-click here to test mouse"
+msgstr "Hier doppelklicken, um Maus zu testen"
+
+#: settings.py:78 theme.py:56
+msgid "Core Theme"
+msgstr "Core Thema"
+
+#: settings.py:80 theme.py:58 theme.py:75
+msgid "No Theme"
+msgstr "Kein Thema"
+
+#: theme.py:79
+msgid ""
+"Currently running applications must be restarted for\n"
+"the new cursor theme to apply to them\n"
+msgstr ""
+"Der Wechsel des Zeigerthemas ist für jetzt laufende\n"
+"Programme erst nach deren Neustart wirksam!\n"
+
+#: tips:1
+msgid "Mouse"
+msgstr "Maus"
+
+#: tips:2
+msgid "Motion"
+msgstr "Bewegung"
+
+#: tips:3
+msgid "Acceleration threshold"
+msgstr "Beschleunigungsschwelle"
+
+#: tips:4
+msgid ""
+"Controls how fast you have to move the pointer before the acceleration "
+"(below) kicks in."
+msgstr ""
+"Regelt, wie schnell der Mauszeiger bewegt werden muß, bis die Beschleunigung "
+"(siehe unten) einsetzt."
+
+#: tips:5
+msgid "Acceleration (none)"
+msgstr "Beschleunigung (keine)"
+
+#: tips:6
+msgid "(10x)"
+msgstr "(10x)"
+
+#: tips:7
+msgid ""
+"When the pointer is moved quickly more than the threshold number of pixels, "
+"its speed is multiplied by this number."
+msgstr ""
+"Wenn der Mauszeiger schnell über den Schwellwert an Pixeln (Bildpunkten) "
+"bewegt wird, vervielfacht sich die Geschwindigkeit um diesen Wert."
+
+#: tips:8
+msgid "DnD Drag Threshold"
+msgstr "Ziehschwelle für Ziehen&Ablegen"
+
+#: tips:9 tips:10
+msgid ""
+"Controls how far you have to drag the mouse to start a drag-and-drop "
+"operation.\n"
+"Set this high if you find yourself dragging things unintentionally."
+msgstr ""
+"Regelt, wie weit die Maus gezogen werden muß, um ein Ziehen&Ablegen "
+"auszulösen.\n"
+"Diesen Wert erhöhen, wenn Sie häufiger Dinge unbeabsichtigt verschieben."
+
+#: tips:11
+msgid "Buttons"
+msgstr "Tasten"
+
+#: tips:12
+msgid "Double-click speed: (fast)"
+msgstr "Doppelklickgeschwindigkeit: (schnell)"
+
+#: tips:13
+msgid "(slow)"
+msgstr "(langsam)"
+
+#: tips:14
+msgid ""
+"Time allowed between the two clicks that make up a double click. Make this "
+"bigger if you have trouble double-clicking fast enough; set it smaller if "
+"two single-clicks sometimes get treated as a double click."
+msgstr ""
+"Erlaubte Zeit zwischen zwei Klicks, um als Doppelklick zu gelten. Erhöhen "
+"Sie diesen Wert, wenn Sie nicht schnell genug klicken können; erniedrigen "
+"sie ihn, wenn einzelne Klicks gelegentlich unbeabsichtigt als Doppelklick "
+"wirken."
+
+#: tips:15
+msgid "Left Handed Button Order"
+msgstr "Tastenzuordnung für linke Hand"
+
+#: tips:16 tips:17
+msgid "Switch button order for left hand use (menu button to the left)."
+msgstr ""
+"Tastenzuordnung für Linkshandnutzung vertauschen (Menütaste nach links)."
+
+#: tips:18
+msgid "Appearance"
+msgstr "Aussehen"
+
+#: tips:19
+msgid "Size: "
+msgstr "Größe: "
+
+#: tips:20
+msgid "pixel"
+msgstr "Pixel"
+
+#: tips:21 tips:22
+msgid "Size of the mouse cursor"
+msgstr "Größe des Mauszeigers"
+
+#: tips:23
+msgid "Theme:"
+msgstr "Thema:"
+
+#: tips:24
+msgid "Theme Folder"
+msgstr "Themenordner"
+
+#: tips:25 tips:26 tips:27 tips:28 tips:29 tips:30
+msgid ""
+"Click to open your private theme folder.\n"
+"You can add/remove themes with the\n"
+"usual filer operations."
+msgstr ""
+"Hier klicken, um den privaten Themenordner zu öffnen.\n"
+"Themen können mit den üblichen Dateimanageroperationen\n"
+"hinzugefügt/entfernt werden werden."

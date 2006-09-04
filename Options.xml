@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<options>
+  <section title='Mouse'>
+		  <frame label='Motion'>
+				  <slider name='ROX/AccelThreshold' label='Acceleration threshold' min='0' max='20' size-group='mouse'>Controls how fast you have to move the pointer before the acceleration (below) kicks in.</slider>
+			  <slider name='ROX/AccelFactor' label='Acceleration (none)' end='(10x)' min='10' max='100' size-group='mouse'>
+When the pointer is moved quickly more than the threshold number of pixels, its speed is multiplied by this number.
+      </slider>
+      <spacer/>
+      <slider name='Net/DndDragThreshold' label='DnD Drag Threshold' min='1' max='50' size-group='mouse'>
+Controls how far you have to drag the mouse to start a drag-and-drop operation.
+Set this high if you find yourself dragging things unintentionally.
+      </slider>
+    </frame>
+    <frame label='Buttons'>
+      <slider name='Net/DoubleClickTime' label='Double-click speed: (fast)' end='(slow)'
+	    min='100' max='2000' size-group='mouse'>Time allowed between the two clicks that make up a double click. Make this bigger if you have trouble double-clicking fast enough; set it smaller if two single-clicks sometimes get treated as a double click.
+      </slider>
+      <spacer/>
+	  <mouse-tester/>
+	  <spacer/>
+	  <toggle label='Left Handed Button Order' name='ROX/LeftHanded'>Switch button order for left hand use (menu button to the left).</toggle>
+    </frame>
+	<frame label='Appearance'>
+	 <hbox>
+	 <vbox>		
+			 <numentry label='Size: ' unit='pixel' min='0' max='36' name='ROX/CursorSize'>Size of the mouse cursor</numentry>
+	 </vbox>	
+	 <spacer/>
+	 <vbox>
+			 <icon-theme name='ROX/CursorTheme' label='Theme:'/>
+	 </vbox>
+	 <spacer/>
+	 <vbox>
+			 <folder-button label='Theme Folder'>Click to open your private theme folder.
+You can add/remove themes with the
+usual filer operations.</folder-button>
+	 </vbox>
+	 </hbox>
+    </frame>
+  </section>
+</options>
