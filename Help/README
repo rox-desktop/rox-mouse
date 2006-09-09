@@ -4,14 +4,11 @@
 
 Brief
 ~~~~~
-
-Mouse
-
 Mouse lets you configure mouse buttons and mouse cursor.
 
 New versions can be found here:
 
-	http://roxos.sunsite.dk/dev-contrib/guido/Configure
+	http://rox.sourceforge.net/desktop/Mouse
 
 You need to be running a recent (later than 0.1.21) version of ROX-Session,
 otherwise it won't work.
@@ -41,4 +38,4 @@ The icon was taken from the Wasp theme
 
 Please report any bugs to the mailing list:
 
-	http://rox.sourceforge.net/phpwiki/index.php/MailingLists
+	http://rox.sourceforge.net/desktop/lists
