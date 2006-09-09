@@ -4,7 +4,7 @@
 		<Summary xml:lang="de">Einstellungen für Maustasten und Mauszeiger</Summary>
 	<About xml:lang="en">
 		<Purpose>Mouse Configuration</Purpose>
-		<Version>0.9.1</Version>
+		<Version>0.10</Version>
 		<Authors>Guido Schimmels &lt;__guido__@web.de&gt;
 		  Tony Houghton &lt;h@realh.co.uk&gt;</Authors>
 		<License>GPL</License>

@@ -1,7 +1,12 @@
 			Mouse	
 			Configure Mouse
 			by Guido Schimmels
-			
+
+Changes in release 0.10:
+
+- Added Zero Install interface file for people running developer versions
+  (Thomas Leonard).
+
 06-Oct-2005
 ~~~~~~~~~~~
 
