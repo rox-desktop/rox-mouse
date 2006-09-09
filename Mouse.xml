@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<interface xmlns="http://zero-install.sourceforge.net/2004/injector/interface">
+  <name>Mouse</name>
+  <summary>mouse configuration applet</summary>
+  <description>
+This configuration tool lets you configure mouse settings, including
+acceleration, drag-and-drop sensitivity, double-click speed, and button order.
+You can also use it to change the mouse pointer's appearance.
+
+You need to be running ROX-Session as your session manager for this to work.
+  </description>
+  <icon type='image/png' href='http://rox.sourceforge.net/Icons/Mouse.png'/>
+  <homepage>http://rox.sourceforge.net/desktop/Mouse</homepage>
+
+  <feed-for interface="http://rox.sourceforge.net/2005/interfaces/Mouse"/>
+
+  <group main="AppRun">
+    <requires interface="http://rox.sourceforge.net/2005/interfaces/ROX-Lib">
+      <environment insert="ROX-Lib2/python" name="PYTHONPATH"/>
+    </requires>
+    <implementation id="." stability="testing" version="0.10"/>
+  </group>
+</interface>
