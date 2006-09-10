@@ -14,6 +14,17 @@ You need to be running a recent (later than 0.1.21) version of ROX-Session,
 otherwise it won't work.
 
 
+Emulate3Buttons
+~~~~~~~~~~~~~~~
+If you have a two button mouse, you can configure the X server so that
+pressing both buttons at once simulates pressing the missing middle button.
+
+However, this isn't controlled by this configlet; instead it's an X server
+setting, so try editing /etc/X11/xorg.conf (the option is called
+"Emulate3Buttons"). Your distribution may come with a graphical tool to help
+with this.
+
+
 Conditions
 ~~~~~~~~~~
 This program is free software; you can redistribute it and/or modify
