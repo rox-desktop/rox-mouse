@@ -5,6 +5,7 @@ echo
 
 python ./tips.py
 (cd ..; pygettext AppRun *.py tips)
+rm ../tips
 
 echo
 echo Updating all .po files...
@@ -14,4 +15,5 @@ for FILE in *.po; do
 	echo -n "Updating '$FILE' translation"
 	mv $FILE $FILE.old
 	msgmerge $FILE.old ../messages.pot > $FILE
+	rm -f $FILE.old
 done

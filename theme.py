@@ -76,8 +76,6 @@ def build_icon_theme(box, node, label, option):
                 button.set_history(i)
     
     def read_theme(): 
-        rox.info(_("Currently running applications must be restarted for\n"
-			"the new cursor theme to apply to them\n"))
         return button.child.get_text()
 
     box.handlers[option] = (read_theme, update_theme)
